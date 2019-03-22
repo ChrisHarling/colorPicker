@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="colorPicker" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SUW-g5-2LS">
+                                <rect key="frame" x="0.0" y="451" width="375" height="216"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="GMO-F2-KSA"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="xTk-z7-t3q"/>
+                                </connections>
+                            </pickerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eA9-RZ-QXe">
+                                <rect key="frame" x="0.0" y="422" width="375" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="SUW-g5-2LS" secondAttribute="trailing" id="CQf-FI-dCk"/>
+                            <constraint firstItem="eA9-RZ-QXe" firstAttribute="trailing" secondItem="SUW-g5-2LS" secondAttribute="trailing" id="XAA-27-Gew"/>
+                            <constraint firstItem="eA9-RZ-QXe" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="385" id="Xeu-g7-NPo"/>
+                            <constraint firstItem="SUW-g5-2LS" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="aQg-0d-Lsa"/>
+                            <constraint firstItem="eA9-RZ-QXe" firstAttribute="leading" secondItem="SUW-g5-2LS" secondAttribute="leading" id="b7Q-la-ac9"/>
+                            <constraint firstItem="SUW-g5-2LS" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="feB-8d-ENE"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="label" destination="eA9-RZ-QXe" id="Q5N-V7-6Sw"/>
+                        <outlet property="pickerView" destination="SUW-g5-2LS" id="uug-t9-Go1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+</document>
